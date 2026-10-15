@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header {
+  background-color: #1e293b;
+  color: white;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.vai-tro {
+  margin-right: 1rem;
+  color: #ccc;
+}
+
+.dang-xuat {
+  color: #f87171;
+  text-decoration: none;
+  border: 1px solid #f87171;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+.dang-xuat:hover {
+  background-color: #f87171;
+  color: white;
+}
+/* === Tiêu đề trang === */
+.tieu-de-trang {
+  margin-bottom: 2rem;
+}
+
+.tieu-de-trang h1 {
+  font-size: 1.8rem;
+  color: #0f172a;
+}
+
+.ngay-cap-nhat {
+  color: #64748b;
+  margin-top: 0.3rem;
+}
+
+/* === Thẻ số liệu 4 ô === */
+.thong-ke {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.the-so-lieu {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.the-so-lieu:hover {
+  transform: translateY(-3px);
+}
+
+.the-so-lieu h3 {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+
+.so-tien {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* === Màu riêng cho từng thẻ === */
+.tong-no { border-color: #6366f1; }
+.tong-no .so-tien { color: #6366f1; }
+
+.cho-thanh-toan { border-color: #f59e0b; }
+.cho-thanh-toan .so-tien { color: #f59e0b; }
+
+.qua-han { border-color: #ef4444; }
+.qua-han .so-tien { color: #ef4444; }
+
+.da-thu { border-color: #10b981; }
+.da-thu .so-tien { color: #10b981; }
+/* === Phần Dự báo AI === */
+.phan-du-bao {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2.5rem;
+  border-top: 3px solid #8b5cf6;
+}
+
+.phan-du-bao h2 {
+  font-size: 1.2rem;
+  color: #5b21b6;
+  margin-bottom: 1rem;
+}
+
+.nut-chinh {
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nut-chinh:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.ket-qua-an {
+  margin-top: 1.5rem;
+  padding: 1.2rem;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  border-left: 3px solid #cbd5e1;
+}
+
+.rong {
+  color: #94a3b8;
+  font-style: italic;
+}
+/* === Chân trang === */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #94a3b8;
+  margin-top: 3rem;
+}
+/* === Điện thoại màn hình dưới 768px === */
+@media (max-width: 768px) {
+  .thong-ke {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+  }
+
+  /* Ẩn cột "Số ngày quá hạn" trên màn hình nhỏ */
+  table th:nth-child(4),
+  table td:nth-child(4) {
+    display: none;
+  }
+
+  th, td {
+    padding: 0.7rem 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* === Điện thoại rất nhỏ dưới 480px === */
+@media (max-width: 480px) {
+  .thong-ke {
+    grid-template-columns: 1fr;
+  }
+}

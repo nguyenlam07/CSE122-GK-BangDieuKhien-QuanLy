@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bảng điều khiển - Quản lý</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="container header-content">
+    <div class="logo">InvoicePilot</div>
+    <nav>
+      <span class="vai-tro">Vai trò: Quản lý</span>
+      <a href="#" class="dang-xuat">Đăng xuất</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  <section class="tieu-de-trang">
+    <h1>Bảng điều khiển công nợ</h1>
+    <p class="ngay-cap-nhat">Cập nhật: 14/10/2026</p>
+  </section>
+
+  <section class="thong-ke">
+    <div class="the-so-lieu tong-no">
+      <h3>Tổng công nợ</h3>
+      <p class="so-tien">50.000.000 đ</p>
+    </div>
+    <div class="the-so-lieu cho-thanh-toan">
+      <h3>Chờ thanh toán</h3>
+      <p class="so-tien">30.000.000 đ</p>
+    </div>
+    <div class="the-so-lieu qua-han">
+      <h3>Quá hạn</h3>
+      <p class="so-tien">15.000.000 đ</p>
+    </div>
+    <div class="the-so-lieu da-thu">
+      <h3>Đã thu trong tháng</h3>
+      <p class="so-tien">5.000.000 đ</p>
+    </div>
+  </section>
+
+  <section class="phan-du-bao">
+    <h2>📈 Dự báo dòng tiền – Phân tích bởi AI</h2>
+    <button id="nut-du-bao" class="nut-chinh">🔮 Tạo dự báo 30 ngày tới</button>
+    <div id="ket-qua-du-bao" class="ket-qua-an">
+      <p class="rong">Nhấn nút trên để xem phân tích dự báo.</p>
+    </div>
+  </section>
+
+  <section class="phan-bang">
+    <h2>⚠️ Hóa đơn quá hạn cần chú ý</h2>
+    <div class="bang-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Mã hóa đơn</th>
+            <th>Khách hàng</th>
+            <th>Số tiền</th>
+            <th>Số ngày quá hạn</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody id="danh-sach-qua-han"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>InvoicePilot © 2026 — Bảng điều khiển Quản lý</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
