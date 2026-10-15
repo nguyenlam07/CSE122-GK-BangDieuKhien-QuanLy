@@ -20,6 +20,6 @@ Quản lý xem số liệu tổng quan, theo dõi hóa đơn quá hạn và xem 
 - Vanilla JavaScript
 
 ## Liên kết
-- Figma: [Dán link Figma của bạn]
+- Figma: https://www.figma.com/make/lvPBEKLXfJQFMIvWnqKaaX/Thi%E1%BA%BFt-k%E1%BA%BF-B%E1%BA%A3ng-%C4%91i%E1%BB%81u-khi%E1%BB%83n?t=CxFgwIEJCuBu7s6z-20&fullscreen=1
 - GitHub: https://github.com/nguyenlam07/CSE122-GK-BangDieuKhien-QuanLy
 - Video: [Điền sau khi quay]
