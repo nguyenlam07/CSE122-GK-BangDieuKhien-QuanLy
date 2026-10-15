@@ -21,5 +21,5 @@ Quản lý xem số liệu tổng quan, theo dõi hóa đơn quá hạn và xem 
 
 ## Liên kết
 - Figma: [Dán link Figma của bạn]
-- GitHub: https://github.com/tranthanhthao28032007/CSE122-GK-BangDieuKhien-QuanLy
+- GitHub: https://github.com/nguyenlam07/CSE122-GK-BangDieuKhien-QuanLy
 - Video: [Điền sau khi quay]
